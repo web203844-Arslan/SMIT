@@ -1,0 +1,75 @@
+
+> northstar-attendance@1.0.0 dev
+> concurrently -n server,client -c blue,green "npm run dev:server" "npm run dev:client"
+
+[server] 
+[server] > northstar-attendance@1.0.0 dev:server
+[server] > npm --prefix Sever run dev
+[server] 
+[client] 
+[client] > northstar-attendance@1.0.0 dev:client
+[client] > npm --prefix Client run dev
+[client] 
+[server] 
+[server] > northstar-server@1.0.0 dev
+[server] > node --watch server.js
+[server] 
+[client] 
+[client] > vite-project@0.0.0 dev
+[client] > vite
+[client] 
+[server] (node:368) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[server] (Use `node --trace-warnings ...` to show where the warning was created)
+[server] Restarting 'server.js'
+[client] 
+[client]   [32m[1mVITE[22m v8.0.12[39m  [2mready in [0m[1m920[22m[2m[0m ms[22m
+[client] 
+[client]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[client] [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[server] (node:11600) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[server] (Use `node --trace-warnings ...` to show where the warning was created)
+[server] Northstar server running at http://localhost:3001
+[client] [2m12:39:40 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[client] [2m12:40:34 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[client] [2m12:40:36 PM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mReferenceError[22m: updateProfilePhoto is not defined
+[client] [39m > App src/App.jsx:330:109
+[client]     328 |  
+[client]     329 |        {view === 'profile'
+[client]     330 |  ...) => setView('dashboard')} onLogout={logout} onPhotoChange={updateProfilePhoto} />
+[client]         |                                                                 ^
+[client]     331 |          : (
+[client]     332 |            <main className="main-content" id="attendance">
+[client]  > Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25904:19
+[client]  > renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:7662:21
+[client]  > updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:10166:18
+[client]  > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:11778:17
+[client]  > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+[client]  > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+[client]  > workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:17469:40
+[client]  > renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:17450:10
+[client]  > performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:16583:34
+[client] 
+[client] [2m12:40:36 PM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <App> component.
+[client] 
+[client] Consider adding an error boundary to your tree to customize error handling behavior.
+[client] Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+[client] 
+[client] [2m12:41:43 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[client] [2m12:41:48 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.css[22m
+[server] Restarting 'server.js'
+[server] (node:13012) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[server] (Use `node --trace-warnings ...` to show where the warning was created)
+[server] Restarting 'server.js'
+[server] (node:11692) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[server] (Use `node --trace-warnings ...` to show where the warning was created)
+[server] Northstar server running at http://localhost:3001
+[server] Restarting 'server.js'
+[server] (node:8628) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+[server] (Use `node --trace-warnings ...` to show where the warning was created)
+[server] Northstar server running at http://localhost:3001
+[server] Failed running 'server.js'. Waiting for file changes before restarting...
+[server] ^C
+[client] ^CTerminate batch job (Y/N)? ^CTerminate batch job (Y/N)? 
+[server] ^CTerminate batch job (Y/N)? 
+[client] npm run dev:client exited with code 3221225786
+[server] npm run dev:server exited with code 3221225786
